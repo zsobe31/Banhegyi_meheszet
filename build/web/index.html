@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Banhegyi_meheszet</title>
+        <meta charset="UTF-8">
+        
+        <!-- KERESŐMOTOR OPTIMALIZÁLÁS -->
+	<meta name="author" content="Zsolt Szabó" />		
+	<meta name="description" content="meztermelo, mehesz, Mecseknadasd" />
+	<meta name="robots" content="index, follow" />
+	<meta name="keywords" content="meztermelo, mehesz, Mecseknadasd" />
+	<meta name="classification" content="meztermelo, mehesz, Mecseknadasd" />		
+	<meta name="subject" content="meztermelo, mehesz, Mecseknadasd" />
+	<meta name="revisit-after" content="5 days" />
+	<meta name="country" content="Hungary">
+        <meta name="content-language" content="hu, hun, hungarian">
+		
+        <!-- OPTIMALIZÁLÁS MINDEN KIJELZŐRE -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- FAVICON HOZZÁADÁSA -->
+        <link rel="icon" href="img_logo/banhegyipng" type="image/gif" sizes="16x16">
+
+        <!-- ICON-FAMILY CSOMAGOK -->
+        <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+
+        <!-- FONT-FAMILY CSOMAGOK -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
+        
+        <!-- BOOTSTRAP 4 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        
+        <!-- SCRIPT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        
+        <!-- SAJÁT STILUS -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!-- BELSŐ SCRIPT -->
+        <script type="text/javascript">
+
+                // GÖRGETÉS SZÖVEG
+                var wss_i = 0;
+
+                var wss_array = ['Görgess','a további','tartalomért!'];
+
+                var wss_elem;
+
+                function wssNext(){
+                        wss_i++;
+                        wss_elem.style.opacity = 0;
+                        if (wss_i > (wss_array.length -1)) {
+                                wss_i = 0;
+                        }
+                        setTimeout("wssSlide()",1000);
+                }
+
+                function wssSlide(){
+                        wss_elem.innerHTML = wss_array[wss_i];
+                        wss_elem.style.opacity = 1;
+                        setTimeout("wssNext()",2000);
+                }
+        </script>
+        
+        <script src="main.js"></script>
+        
+        <style>
+            span{
+                display:inline-block;
+                width:200px;
+                overflow:auto;
+            }
+        </style>
+                
+    </head>
+    
+    <body onload="betolt()">
+        
+        <!-- FŐOLDAL -->
+        <section id="main">
+
+                <!-- NAVBAR -->
+                <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top">	
+
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                        <div class="collapse navbar-collapse" id="myNavbar">
+
+                            <a class="navbar-brand mr-5" href="#main">
+                                    <img src="img_logo/banhegyi.png" alt="Logo" style=" width:60px; height:40px">
+                            </a>
+
+                            <a href="index.html" class="mr-3">
+                                    <img src="img_logo/hungary.png" style="height: 25px">
+                            </a>
+                            <!-- <a href="index-ger.html">
+                                    <img src="img_logo/germany.png" style="height: 25px">
+                            </a> -->
+
+
+                                <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item mr-2">
+                                                <a class="nav-link" href="#section1">Bemutatkozás</a>
+                                        </li>
+                                        <li class="nav-item mr-2">
+                                                <a class="nav-link" href="#section3">Termékeim</a>
+                                        </li>
+                                        <li class="nav-item mr-2">
+                                                <a class="nav-link" href="#section4">Vélemények</a>
+                                        </li>
+                                        <li class="nav-item mr-2">
+                                                <a class="nav-link" href="#section5">Kapcsolat</a>
+                                        </li>
+
+                                </ul>
+                        </div>
+
+                </nav>
+                <!-- NAVBAR VÉGE -->
+
+            <!-- SZÖVEG DOBOZ - FŐOLDAL -->
+            <div class="container box">
+
+                    <h4 class="h4">Szeretettel köszöntöm Önt a</h4>
+                    <h4 class="h4">Bánhegyi Családi Méhészet oldalán!</h4>
+
+            </div>
+            <!-- SZÖVEG DOBOZ - FŐOLDAL VÉGE -->				  
+
+        </section>
+
+        <!-- FŐOLDAL VÉGE-->
+        
+        <!-- GÖRGETÉS -->
+
+        <div class="container-fluid-1 scroll">
+                <span id="wss"></span>
+        </div>
+
+        <script type="text/javascript">
+
+                wss_elem = document.getElementById("wss");
+                wssSlide();
+
+        </script>
+
+        <!-- GÖRGETÉS VÉGE -->
+        
+        <!-- SECTION 1 -->
+
+        <!-- Bemutatkozás -->
+
+        <section id="section1" class="container-fluid">
+
+                <h2 class="h2 gray">Bemutatkozás</h2>
+
+                <div class="row">
+
+                        <div class="col-10 text-justify mx-auto">
+
+                        <img id="kep1" src="img/banhegyi.jpeg" class="mx-auto d-flex img-fluid">
+
+                        <div id="accordion1">
+
+                                <div class="collapsed card-link" data-toggle="collapse" href="#collapseTen">
+
+                                        <p class="bemutatkozas">Bánhegyi Roland méhész vagyok, 1978-ban egy meleg nyári napon, 
+                                            Mohácson láttam meg a napvilágot. Mecseknádasdon élek családommal, akik mindenben 
+                                            segítségemre vannak a méhészetben. <p class="text-center cim1">Több infó...</p></p>
+
+                                </div>
+
+                                <div id="collapseTen" class="collapse" data-parent="#accordion1">
+
+                                                <p class="bemutatkozas"> Munka mellett méhészkedem, jelenleg 60 méhcsaláddal 
+                                                    lakóhelyemen. Már dédnagyapám is méhészkedett abban a méhes házban, ami 
+                                                    egykoron a szüleim háza mellett ált. Első méhcsaládjaimat nagybátyámtól 
+                                                    kaptam, aki a mai napig segítségemre van.<br>Elméleti és gyakorlati tudásom 
+                                                    gyarapítása végett 2013-ban elvégeztem a méhész szakmunkásképző iskolát, 
+                                                    ami nem csak tudást, hanem olyan méhészek ismerettségét is magával hozta, 
+                                                    akik azóta is segítenek, hogy jó és eredményes méhészé válljak.<br>Jelenlegi 
+                                                    termékeink tavaszi virág, repce, akác, hárs, nyári virág és napraforgó méz 
+                                                    valamint propolisz, amelyek a helyi CBA élelmiszerboltban, a Hetényi 
+                                                    pincészetben és a Karl-Mikro Sörfőzdében elérhetőek, különböző kiszerelésekben 
+                                                    és csomagolásokban.<br>Kínálatunkat az igényeknek megfelelően igyekszünk 
+                                                    bővíteni.<br>2013-ban csatlakoztunk a Mecseki Mézes Körúthoz, hogy több 
+                                                    baranyai méhésszel összefogva népszerűsítsük a kiváló minőségű Mecseki Mézet.
+                                                    <br>Termékeinknél nem a mennyiségre, hanem a minőségre törekszünk, amellyel 
+                                                    igyekszünk elnyerni vásárlóink bizalmát.</p><br>
+
+                                </div>
+
+                        </div>
+
+                                <div class="dropdown text-center" style="margin: 25px 0;">
+                                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" style="width: 200px;">
+                                    Képgaléria
+                                        </button>
+                                        <div class="dropdown-menu" style="background: #fd9d2d; width: 200px;">
+                                        <a class="dropdown-item" href="kepgaleria.html" target="_blank">Képgaléria-1</a>
+                                        <a class="dropdown-item" href="kepgaleria2.html" target="_blank">Képgaléria-2</a>
+                                        </div>
+                                </div>						  
+
+                        <p class="text-center bemutatkozas mt-2">Nézzen körül oldalunkon!</p>	
+
+                </div>
+
+                </div>
+
+        </section>
+
+        <!-- SECTION 1 VÉGE -->
+        
+        <!-- SECTION 2 -->
+
+        <section id="section2" class="container-fluid">
+
+                <h2 class="h2 orange">Méhek és a méz</h2>
+
+                <!-- Ikonok, leírás -->
+                <div class="row leiras">
+
+                        <div class="col-10 col-md-4 text-center mx-auto">						
+                                <img src="img_logo/bee-1.png" class="img-fluid kep2"><br>
+                                <p class="text-center">Méhek</p>
+                                <p class="text-justify mx-2">Kicsit sem túlzó kijelentés, hogy méhek nélkül mi 
+                                    sem maradhatnánk sokáig a Föld bolygón. Ugyanis a táplálékul szolgáló növényeink 
+                                    nagy részének a beporzását ezek a kis szorgos rovarok végzik.</p> 
+                        </div>
+
+                        <div class="col-10 col-md-4 text-center mx-auto">
+                                <img src="img_logo/honey-1.png" class="img-fluid kep2"><br>
+                                <p class="text-center">Méz</p>
+                                <p class="text-justify mx-2">Igen sok terméket szolgáltatnak a számunkra, melyek 
+                                    nem csak finomak, de rendkívül egészségesek is. A méhek által előállított 
+                                    termékek közül a méz a legismertebb.</p>
+                        </div>
+
+                        <div class="col-10 col-md-4 text-center mx-auto">
+                                <img src="img_logo/heart-1.png" class="img-fluid kep2"><br>
+                                <p class="text-center">Egészség</p>
+                                <p class="text-justify mx-2">A méz kiváló természetes édesítőszer, amit akár a 
+                                    cukorbetegek is fogyaszthatnak. Ugyanakkor a fogyókúrázóknak sem kell lemondjanak 
+                                    az édességekről, hiszen a mézzel készült nyalánkságokkal bátran „bűnözhetnek”.</p>
+                        </div>
+
+                </div>
+
+        </section>
+
+        <!-- SECTION 2 VÉGE -->
+        
+        <!-- SECTION 3 -->
+
+        <section id="section3" class="container-fluid">
+
+                        <h2 class="h2 gray">Termékek és árak</h2>
+
+                        <div class="container mt-3">
+
+                                <div id="accordion">	
+
+                                        <div class="row py-2 collapsed card-link" data-toggle="collapse" href="#collapseOne">
+                                                <img src="img/akac-mez.jpg" class="img img-fluid">
+                                                <div class="col-9 col-md-9 ml-auto text-justify"><p id="akac" style="color: white;">
+                                                        Akác méz</p><p>Az akácméz íze lágy és kellemes, 
+                                                        ezért kiváló az ételek és italok ízesítésére. Nehezen kristályosodik, 
+                                                        vagyis sokáig folyékony marad. Az akácméz nagyon hatékony lehet a gyomorsav 
+                                                        túltengés és köhögés ellen is.</p></div>
+                                        </div>
+                                        <div id="collapseOne" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                                <p class="text-center">Akácméz árak</p>
+                                                <table class="table table-borderless table-striped">
+                                                        <thead>
+<!--                                                                <tr class="text-center">
+                                                                        <th>Kiszerelés</th>
+                                                                        <th>Árak</th>
+                                                                </tr>-->
+                                                        </thead>
+                                                        <tbody>
+                                                            <div id="adatok" class="text-center"></div>
+<!--                                                                <tr class="text-center">
+                                                                        <td>1000g</td>
+                                                                        <td>2000 huf</td>
+                                                                </tr>
+                                                                <tr class="text-center">
+                                                                        <td>900g</td>
+                                                                        <td>1800 huf</td>
+                                                                </tr>
+                                                                <tr class="text-center">
+                                                                        <td>500g</td>
+                                                                        <td>1150 huf</td>
+                                                                </tr>
+                                                                <tr class="text-center">
+                                                                        <td>250g</td>
+                                                                        <td>600 huf</td>
+                                                                </tr>-->
+                                                        </tbody>
+                                                </table>
+                                        </div>
+                                </div>
+                                    
+                                <div class="row py-2 collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                                <div class="col-9 col-md-9 text-justify"><p id="hars" class="text-right" style="color: white;">
+                                                        Hárs méz</p><p>A hársméz igen pikáns ízű, gyakran mézpakolások alapjául is szolgál. 
+                                                        Erősítheti immunrendszerünket, így télen kimondottan ajánlott fogyasztása.</p></div>
+                                                <img src="img/hars-mez.jpg" class="img img-fluid ml-auto">
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                                <p class="text-center">Hársméz árak</p>
+                                                <table class="table table-borderless table-striped">
+                                                        <thead>
+                                                                <tr class="text-center">
+                                                                        <th>Kiszerelés</th>
+                                                                        <th>Árak</th>
+                                                                </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                                <tr class="text-center">
+                                                                        <td>1000g</td>
+                                                                        <td>1800 huf</td>
+                                                                </tr>
+                                                                <tr class="text-center">
+                                                                        <td>900g</td>
+                                                                        <td>1620 huf</td>
+                                                                </tr>
+                                                                <tr class="text-center">
+                                                                        <td>500g</td>
+                                                                        <td>1050 huf</td>
+                                                                </tr>
+                                                                <tr class="text-center">
+                                                                        <td>250g</td>
+                                                                        <td>550 huf</td>
+                                                                </tr>
+                                                        </tbody>
+                                                </table>
+                                        </div>
+                                </div>
+                                    
+                                <div class="row py-2 collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                                <img src="img/nyari.jpg" class="img img-fluid">
+                                                <div class="col-9 col-md-9 ml-auto text-justify"><p id="nyari" style="color: white;">
+                                                        Nyári virágméz</p><p>Enyhe, fűszeres zamata révén az egyik legkedveltebb 
+                                                        mézfajta ételízesítéshez, süteményekhez. A mézeskalács legkiválóbb alapanyaga. 
+                                                        Mindezeken túl számtalan vadvirág adja a nyári mézek zamatának gazdagságát, 
+                                                        pozitív élettani hatásának alapját.</p></div>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                                <p class="text-center">Nyári virágméz árak</p>
+                                                <table class="table table-borderless table-striped">
+                                                        <thead>
+                                                                <tr class="text-center">
+                                                                        <th>Kiszerelés</th>
+                                                                        <th>Árak</th>
+                                                                </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                                <tr class="text-center">
+                                                                        <td>1000g</td>
+                                                                        <td>1600 huf</td>
+                                                                </tr>
+                                                                <tr class="text-center">
+                                                                        <td>900g</td>
+                                                                        <td>1450 huf</td>
+                                                                </tr>
+                                                                <tr class="text-center">
+                                                                        <td>500g</td>
+                                                                        <td>900 huf</td>
+                                                                </tr>
+                                                                <tr class="text-center">
+                                                                        <td>250g</td>
+                                                                        <td>500 huf</td>
+                                                                </tr>
+                                                        </tbody>
+                                                </table>
+                                        </div>
+                                </div>
+                                    
+                                <div class="row py-2 collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                                                <div class="col-9 col-md-9 text-justify"><p id="tavaszi" class="text-right" style="color: white;">
+                                                        Tavaszi virágméz</p><p>A tavaszi virágméz színe és íze adott év virágkínálatától függ. 
+                                                        Általában sárga - aranybarna, közepesen kristályosodó, friss, enyhén fanyarkás ízű méz. 
+                                                        Beltartalmi értéke magas,  enyhíti a megfázás tüneteit, antibakteriális, csonterősítő 
+                                                        hatású.</p></div>
+                                                <img src="img/tavaszi.jpg" class="img img-fluid ml-auto">
+                                        </div>
+                                        <div id="collapseFour" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                                <p class="text-center">Tavaszi virágméz árak</p>
+                                                <table class="table table-borderless table-striped">
+                                                        <thead>
+                                                                <tr class="text-center">
+                                                                        <th>Kiszerelés</th>
+                                                                        <th>Árak</th>
+                                                                </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                                <tr class="text-center">
+                                                                        <td>1000g</td>
+                                                                        <td>1600 huf</td>
+                                                                </tr>
+                                                                <tr class="text-center">
+                                                                        <td>900g</td>
+                                                                        <td>1450 huf</td>
+                                                                </tr>
+                                                                <tr class="text-center">
+                                                                        <td>500g</td>
+                                                                        <td>900 huf</td>
+                                                                </tr>
+                                                                <tr class="text-center">
+                                                                        <td>250g</td>
+                                                                        <td>500 huf</td>
+                                                                </tr>
+                                                        </tbody>
+                                                </table>
+                                        </div>
+                                </div>
+                                    
+                                <div class="row py-2 collapsed card-link" data-toggle="collapse" href="#collapseFive">
+                                                <img src="img/repce-mez.jpeg" class="img img-fluid">
+                                                <div class="col-9 col-md-9 ml-auto text-justify"><p id="repce" style="color: white;">
+                                                        Repce méz</p><p>A repceméz nagyon krémes, mely gyorsan képes beopálosodni. 
+                                                        Nagyon erős fertőtlenítő és gyulladáscsökkentő hatással bír, de gyomorsavtúltengés 
+                                                        ellen is kiváló.</p></div>
+                                        </div>
+                                        <div id="collapseFive" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                                <p class="text-center">Repce méz árak</p>
+                                                <table class="table table-borderless table-striped">
+                                                        <thead>
+                                                                <tr class="text-center">
+                                                                        <th>Kiszerelés</th>
+                                                                        <th>Árak</th>
+                                                                </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                                <tr class="text-center">
+                                                                        <td>1000g</td>
+                                                                        <td>1600 huf</td>
+                                                                </tr>
+                                                                <tr class="text-center">
+                                                                        <td>900g</td>
+                                                                        <td>1450 huf</td>
+                                                                </tr>
+                                                                <tr class="text-center">
+                                                                        <td>500g</td>
+                                                                        <td>900 huf</td>
+                                                                </tr>
+                                                                <tr class="text-center">
+                                                                        <td>250g</td>
+                                                                        <td>500 huf</td>
+                                                                </tr>
+                                                        </tbody>
+                                                </table>
+                                        </div>
+                                </div>
+                                    
+                                <div class="row py-2 collapsed card-link" data-toggle="collapse" href="#collapseSix">
+                                                <div class="col-9 col-md-9 text-justify"><p id="napraforgo" class="text-right" style="color: white;">
+                                                        Napraforgóvirág méz</p><p>A napraforgóméz kiváló lehet az italok ízesítésére. Nagyjából 
+                                                        egy-két hét alatt képes bekristályosodni. A napraforgóméz nagyon jó a gyomorsav túltengés 
+                                                        ellen és fertőtlenítő, gyulladáscsökkentő hatással is bír.</p></div>
+                                                <img src="img/napraforgo-mez.jpg" class="img img-fluid ml-auto">
+                                        </div>
+                                        <div id="collapseSix" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                                <p class="text-center">Napraforgóméz árak</p>
+                                                <table class="table table-borderless table-striped">
+                                                        <thead>
+                                                                <tr class="text-center">
+                                                                        <th>Kiszerelés</th>
+                                                                        <th>Árak</th>
+                                                                </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                                <tr class="text-center">
+                                                                        <td>1000g</td>
+                                                                        <td>1600 huf</td>
+                                                                </tr>
+                                                                <tr class="text-center">
+                                                                        <td>900g</td>
+                                                                        <td>1450 huf</td>
+                                                                </tr>
+                                                                <tr class="text-center">
+                                                                        <td>500g</td>
+                                                                        <td>900 huf</td>
+                                                                </tr>
+                                                                <tr class="text-center">
+                                                                        <td>250g</td>
+                                                                        <td>500 huf</td>
+                                                                </tr>
+                                                        </tbody>
+                                                </table>
+                                        </div>
+                                </div>
+                                    
+                                <div class="row py-2 collapsed card-link" data-toggle="collapse" href="#collapseSeven">
+                                                <img src="img/diszcsom.jpg" class="img img-fluid">
+                                                <div class="col-9 col-md-9 ml-auto"><p id="diszcsomag" style="color: white;">
+                                                        Díszcsomag</p><p>Diszcsomagolás.</p></div>
+                                        </div>
+
+                                        <div id="collapseSeven" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                                <p class="text-center">Díszcsomagolt termék árak</p>
+                                                <table class="table table-borderless table-striped">
+                                                        <thead>
+                                                                <tr>
+                                                                        <th>Kiszerelés</th>
+                                                                        <th>Árak</th>
+                                                                </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                                <tr>
+                                                                        <td>4x230g Méz</td>
+                                                                        <td>2450 huf</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>2x500g méz (Akác-Hárs)</td>
+                                                                        <td>2600 huf</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>2x500g méz (Akác-bármely virág)</td>
+                                                                        <td>2450 huf</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>2x500g méz (Hárs-bármely virág)</td>
+                                                                        <td>2350 huf</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>2x500g méz (2 féle virágmézből)</td>
+                                                                        <td>2100 huf</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>Házikó</td>
+                                                                        <td>1500 huf</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>Kis polc</td>
+                                                                        <td>1850 huf</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>Nagy polc</td>
+                                                                        <td>2500 huf</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>Szív alakú mézesüveg</td>
+                                                                        <td>850 huf</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>2x500g méz fa dobozban</td>
+                                                                        <td>3000 huf</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>Díszdoboz 1kg-os mézhez</td>
+                                                                        <td>350 huf</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>Dísz tasak</td>
+                                                                        <td>350 huf</td>
+                                                                </tr>
+                                                        </tbody>
+                                                </table>
+                                        </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                </section>
+
+        <!-- SECTION 3 VÉGE -->
+        
+        <!-- PARALLAX -->
+
+        <div class="parallax">
+                <p class="text-center">„Ki szereti a feleségét, mézzel óvja egészségét!”</p>
+        </div>
+
+        <!-- PARALLAX VÉGE -->
+
+        <!-- SECTION 4 -->
+
+        <section id="section4" class="container-fluid">
+
+                <h2 class="h2 orange">Vásárlói vélemények</h2>
+
+                <!-- carousel -->
+
+                        <div class="container slide-container"> 
+
+                                <div class="carousel slide" id="demo" data-ride="carousel" data-interval="5000">
+
+                                        <!-- indikátorok/gördítő gombok -->
+
+                                        <ul class="carousel-indicators">
+                                                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                                <li data-target="#demo" data-slide-to="1"></li>
+                                                <li data-target="#demo" data-slide-to="2"></li>
+                                                <li data-target="#demo" data-slide-to="3"></li>
+                                                <li data-target="#demo" data-slide-to="4"></li>
+                                        </ul>
+
+                                        <!-- fő egység -->
+
+                                        <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                        <div class="card mx-auto">
+                                                                <p><span>&#750;</span> A méz nagyon finom! A kiszolgálás gyors és pontos. Ajánlani tudom mindenkinek!</p>
+                                                                <p class="author">- Takács Attila</p>
+                                                        </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                        <div class="card mx-auto">
+                                                                <p><span>&#750;</span> Mint mindig, most is minden rendben volt a rendeléssel és a kiszállítással is.</p>
+                                                                <p class="author">- Kiss Orsi</p>
+                                                        </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                        <div class="card mx-auto">
+                                                                <p><span>&#750;</span> Nagyon jó ízűek a mézek. A legfinomabb a napraforgó íze, a kávémat ezzel édesítem.</p>
+                                                                <p class="author">- Nagy Tamás</p>
+                                                        </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                        <div class="card mx-auto">
+                                                                <p><span>&#750;</span> Nagyon szeretjük a mézüket, különlegesen finom és kitűnő minőségű magyar termék.</p>
+                                                                <p class="author">- Szabó Győző</p>
+                                                        </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                        <div class="card mx-auto">
+                                                                <p><span>&#750;</span> További sikeres munkát kívánunk Önöknek és szorgos méheiknek!</p>
+                                                                <p class="author">- Ábrahám Péter</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                <!-- carousel VÉGE -->
+                
+                <h3 class="text-center">Partnereink</h3>
+
+                <div id="partnerek" class="row text-center">
+
+                        <a href="http://www.indivinum.hu/hu/" class="col-7 col-md-3 mx-auto" target="_blank">
+                                <img src="img_logo/hetenyilogo.png" class="img-fluid">
+                                <p>Hetényi Pincészet Mecseknádasd</p>
+                        </a>
+
+                        <a href="http://karlbeer.com/" class="col-7 col-md-3 mx-auto" target="_blank">
+                                <img src="img_logo/karl-mikro.png" class="img-fluid">
+                                <p>Karl-Mikro sörfőzde</p>
+                        </a>
+
+                        <a href="http://www.cba.hu/" class="col-7 col-md-3 mx-auto" target="_blank">
+                                <img src="img_logo/cba.png" class="img-fluid">
+                                <p>Mecseknádasd CBA élelmiszerüzlet</p>
+                        </a>
+
+                </div>
+
+        </section>
+
+        <!-- SECTION 4 VÉGE -->
+
+        <!-- SECTION 5 -->
+
+        <section id="section5" class="container-fluid">
+
+                <h2 class="h2 gray">Elérhetőségeim</h2>
+
+                <div class="row text-center elerh">
+
+                        <div class="col-12 col-md-2"></div>
+
+                        <div class="col-12 col-md-2 mx-auto mb-3 kuld">
+                                <a href="https://www.facebook.com/roland.banhegyi.1" class="mx-auto" target="_blank">
+                                        <img src="img_logo/icons8-facebook-50.png">
+                                </a>
+                                <p class="text-center">Facebook kapcsolat!</p>
+                        </div>
+
+                        <div class="col-12 col-md-2 mx-auto mb-3 kuld">
+                                <a href="mailto:banhegyi@gmail.com" class="mx-auto">
+                                        <img src="img_logo/icons8-new-post-50.png">
+                                </a>
+                                <p class="text-center">Üzenetküldés!</p>
+                        </div>
+
+                        <div class="col-12 col-md-2 mx-auto mb-3 kuld">
+                                <a href="tel: +36 30 230 7775" class="mx-auto">
+                                        <img src="img_logo/icons8-phone-50.png">	
+                                </a>
+                                <p class="text-center">Telefonhívás!</p>
+                        </div>
+
+                        <div class="col-12 col-md-2 mx-auto mb-3 kuld">
+                                <a href="https://www.google.com/maps/place/Mecsekn%C3%A1dasd,+Kossuth+Lajos+u.+96,+7695/@46.2228237,18.4527833,17z/data=!3m1!4b1!4m5!3m4!1s0x4742bfaf004afccf:0xe90a28f805def21d!8m2!3d46.22282!4d18.454972" class="mx-auto" target="_blank">
+                                        <img src="img_logo/icons8-waypoint-map-50.png">
+                                </a>
+                                <p class="text-center">Útvonaltervezés!</p>
+                        </div>
+
+                        <div class="col-12 col-md-2"></div>
+
+                </div>
+                </section>
+
+		<!-- SECTION 5 VÉGE -->
+
+		<!-- FOOTER -->
+
+		<section id="contact" class="container-fluid">
+
+			<p class="text-center">Copyright © 2018 by <a href="http://www.web-build.eu/" style="color: orange; text-decoration: none;" target="_blank">Zsolt</a></p>
+
+		</section>
+
+		<!-- FOOTER VÉGE -->
+
+        
+        <!-- SCRIPT -->
+	<script src="script.js"></script>
+        
+    </body>
+</html>

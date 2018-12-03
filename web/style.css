@@ -1,0 +1,315 @@
+/* ÁLTALÁNOS */
+body, html {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+  	font-family: 'Raleway', sans-serif;
+  	font-size: 1rem;
+}
+@media only screen and (max-device-width: 1366px){
+	body {
+		font-size: .8rem;
+	}
+}
+
+/* CÍMSOROK */
+.h2 {
+	text-align: center;
+	padding-top: 70px; 
+	padding-bottom: 30px;
+}
+@media only screen and (max-device-width: 1366px){
+	.h2 {
+		font-size: 1.5rem;
+	}
+}
+/* H2 TAG AFTER LINE */
+.gray:after {
+	display: block;
+    height: 2px;
+    background-color: #000;
+    content: " ";
+    width: 10%;
+    margin: 30px auto 0 auto;
+}
+.orange:after {
+	display: block;
+    height: 2px;
+    background-color: #fd9d2d;
+    content: " ";
+    width: 10%;
+    margin: 30px auto 0 auto;
+}
+/* CONTAINER ALJÁN LÉVŐ TERÜLET */
+.container-fluid {
+	padding-bottom: 50px;
+}
+
+/* NAVBAR */			
+#navbar {
+  	background-color: #2e3640;
+  	position: fixed;
+  	top: -70px;
+  	width: 100%;
+  	display: block;
+  	transition: top 0.8s;
+}
+
+/* FŐOLDAL */
+#main {
+	background: linear-gradient(
+  		rgba(0, 0, 0, 0.5),
+  		rgba(0, 0, 0, 0.5)
+	), url('img/reggeli-kep.jpg');
+    height: 94%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* PARALLAX */
+.parallax {
+	background-image: linear-gradient(
+    	rgba(0,0,0,0.5),
+    	rgba(0,0,0,0.5)),
+    url('img/kiralyno.jpg');
+    height: 50%; 
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+.parallax p {
+	color: white;
+	position: absolute;
+	top: 50%;
+  	left: 50%;
+  	-webkit-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+  	margin: 0;
+  	padding: 0;
+  	font-size: 1.5rem;
+}
+
+/* parallax efekt kikapcsolása */
+@media only screen and (max-device-width: 1366px){
+	#main {
+		background-attachment: scroll;
+	}
+	.parallax {
+		background-attachment: scroll;
+		height: 30%;
+	}
+}
+
+/* SZÖVEG DOBOZ - FŐOLDAL */
+.box {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+  	left: 50%;
+  	-webkit-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+}
+.box .h4 {
+	line-height: 6rem;
+	color: #fff;
+	font-size: 5rem;
+	font-family: 'Italianno', cursive;
+}
+@media only screen and (max-device-width: 1366px){
+	.box .h4 {
+		font-size: 4rem;
+		line-height: 5rem;
+	}
+	.parallax p {
+		font-size: 1rem;
+	}
+}
+@media only screen and (max-device-width: 768px){
+	.box .h4 {
+		font-size: 2.5rem;
+		line-height: 4rem;
+	}
+}
+
+/* GÖRGETÉS */
+.scroll {
+	text-align: center;
+	color: #000;
+	background: #fd9d2d;
+	font-size: 1.5rem;
+}
+@media only screen and (max-device-width: 1366px){
+	.scroll {
+		font-size: 1rem;
+	}
+}
+#wss {
+	opacity: 0;
+	-webkit-transition: opacity 1.0s linear 0s;
+	transition: opacity 1.0s linear 0s;
+}
+
+/* SECTION 1 */
+#section1 {
+	background: #fd9d2d;
+}
+#kep1 {
+	width: 50%;
+	margin-bottom: 5%;
+	border-radius: 10px; 
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bemutatkozas {
+	font-size: 1.05rem;
+}
+@media only screen and (max-device-width: 1366px){
+	#kep1 {
+		width: 75%;
+	}
+}
+.cim1 {
+	margin-bottom: 3%;
+	color: black;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0% {color: black;}
+    50% {color: white;}
+    100% {color: black;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0% {color: black;}
+    50% {color: white;}
+    100% {color: black;}
+}
+#section1 .btn {
+	background: rgba(0,0,0,0);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.bemutatkozas:hover,
+.cim1:hover {
+	cursor: pointer;
+}
+
+/* SECTION 2 */
+#section2 {
+	color: white; 
+	background: #767581;
+}
+.kep2 {
+	width: 60px;
+	height: 60px;
+	margin-bottom: 5%; 
+}
+.leiras {
+	padding: 2% 8%;
+}
+
+/* SECTION 3 */
+#section3 {
+	background: #fd9d2d;
+	border: none;
+}
+#accordion img {
+	width: 25%;
+	height: 25%;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#accordion .row {
+	margin: 2% 0;
+}
+#accordion .row:hover {
+	cursor: pointer;
+}
+
+/* SECTION 4 */
+#section4 {
+	background: #767581;
+	color: #fff;
+}
+#section4 .author {
+	text-align: right;
+	font-size: 1.2rem;
+}
+#section4 .card {
+	width: 80%;
+	height: 60%;
+	padding: 25px;
+	margin-bottom: 80px;
+	background: #83828D;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#section4 .card p {
+	font-style: italic;
+}
+#section4 .carousel span {
+	font-size: 3rem;
+}
+#section4 .carousel-indicators li {
+		width: 10px;
+		height: 10px;
+		border-radius: 100%;
+}
+#partnerek a {
+	transition: .5s;
+	margin: 25px; 
+	padding: 20px; 
+	background: rgba(0,0,0,0.5); 
+	color: #fff; 
+	border-radius: 10px; 
+	text-decoration: none;
+}
+#partnerek a:hover {
+	transform: scale(1.03);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#partnerek a>img {
+	height: 50px; 
+	margin-bottom: 20px;
+}
+
+/* SECTION 5 */
+#section5 {
+	background: #fd9d2d;
+	padding-bottom: 10px;
+}
+#section5 img {
+	transition: 1s;
+	text-decoration: none;
+	color: #000;
+}
+#section5 img:hover {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+#section5 button {
+	background: rgba(0,0,0,0);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* footer */
+#contact {
+	background: #575564;
+	padding-bottom: 10px;
+	height: 75px; 
+	padding-top: 30px
+}
+
+ion-icon:hover {
+	opacity: .8;
+	-webkit-transform: scale(1.2);
+	-webkit-transition: 1s;
+	transform: scale(1.2);
+	transition: 1s;
+}
