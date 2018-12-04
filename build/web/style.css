@@ -231,6 +231,11 @@ body, html {
 #accordion .row:hover {
 	cursor: pointer;
 }
+#section3 span{
+                display:inline-block;
+                width:300px;
+                overflow:auto;
+            }
 
 /* SECTION 4 */
 #section4 {

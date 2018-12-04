@@ -17,6 +17,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.ParameterMode;
 import javax.persistence.StoredProcedureQuery;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -98,6 +99,7 @@ public class Akac implements Serializable {
         this.ara = ara;
     }
     
+    // adatok lekérése
     public static List<Akac> getAllAkac(EntityManager em){
         List<Akac> akacok = new ArrayList();
         
@@ -109,6 +111,74 @@ public class Akac implements Serializable {
         }
         
         return akacok;
+    }
+    
+    // hozzáadás
+    public static Akac addNewAkac(EntityManager em, String nev, String mennyiseg, String ara){
+        Akac a = null; // new Akac();
+        try{
+            StoredProcedureQuery spq = em.createStoredProcedureQuery("addNewAkac");
+            spq.registerStoredProcedureParameter("nevIN", String.class, ParameterMode.IN);
+            spq.setParameter("nevIN", nev);
+            spq.registerStoredProcedureParameter("mennyisegIN", String.class, ParameterMode.IN);
+            spq.setParameter("mennyisegIN", mennyiseg);
+            spq.registerStoredProcedureParameter("araIN", String.class, ParameterMode.IN);
+            spq.setParameter("araIN", ara);     
+            spq.execute();
+            
+            StoredProcedureQuery spq2 = em.createStoredProcedureQuery("lastInsertId");
+            spq2.registerStoredProcedureParameter("idOUT", Integer.class, ParameterMode.OUT);
+            spq2.execute();
+            Object o = spq2.getOutputParameterValue("idOUT");
+            int id = Integer.parseInt(o.toString());
+            
+            a = em.find(Akac.class, id);
+        }
+        catch(Exception ex){
+            System.out.println("Hiba: " + ex.toString());
+        }
+        return a;
+    }
+    
+    // törlése
+    public static Akac deleteAkac(EntityManager em, int id){
+        Akac a1 = null;
+        
+        try{
+            StoredProcedureQuery spq3 = em.createStoredProcedureQuery("deleteAkac");
+            spq3.registerStoredProcedureParameter("idIN", Integer.class, ParameterMode.IN);
+            spq3.setParameter("idIN", id);
+            spq3.execute();
+        }
+        catch(Exception ex){
+            System.out.println("Hiba: " + ex.toString());
+        }
+        
+        return a1;
+    }
+    
+    // módosítás
+    public static Akac updateAkac(EntityManager em, String nev, String mennyiseg, String ara, int id){
+        Akac a2 = null;
+        
+        try{
+            StoredProcedureQuery spq4 = em.createStoredProcedureQuery("updateAkac");
+            spq4.registerStoredProcedureParameter("nevIN", String.class, ParameterMode.IN);
+            spq4.setParameter("nevIN", nev);
+            spq4.registerStoredProcedureParameter("mennyisegIN", String.class, ParameterMode.IN);
+            spq4.setParameter("mennyisegIN", mennyiseg);
+            spq4.registerStoredProcedureParameter("araIN", String.class, ParameterMode.IN);
+            spq4.setParameter("araIN", ara);
+            spq4.registerStoredProcedureParameter("idIN", Integer.class, ParameterMode.IN);
+            spq4.setParameter("idIN", id);
+            spq4.execute();
+            
+        }
+        catch(Exception ex){
+            System.out.println("Hiba: " + ex.toString());
+        }
+        
+        return a2;
     }
 
     @Override

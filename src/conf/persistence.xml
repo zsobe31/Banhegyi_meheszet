@@ -7,6 +7,11 @@
     <class>backend.Elerhetosegek</class>
     <class>backend.Hars</class>
     <class>backend.Velemenyek</class>
+    <class>backend.Nyarivirag</class>
+    <class>backend.Repce</class>
+    <class>backend.Napraforgo</class>
+    <class>backend.Tavaszivirag</class>
+    <class>backend.Diszcsomag</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/BanhegyiMeheszet?zeroDateTimeBehavior=convertToNull"/>
