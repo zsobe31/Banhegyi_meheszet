@@ -12,6 +12,7 @@
     <class>backend.Napraforgo</class>
     <class>backend.Tavaszivirag</class>
     <class>backend.Diszcsomag</class>
+    <class>backend.Felhasznalo</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/BanhegyiMeheszet?zeroDateTimeBehavior=convertToNull"/>

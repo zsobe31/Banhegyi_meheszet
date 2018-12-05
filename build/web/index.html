@@ -70,7 +70,7 @@
                 
     </head>
     
-    <body onload="betolt()">
+    <body onload="betoltA(), betoltH(), betoltN(), betoltT(), betoltR(), betoltF(), betoltD()">
         
         <!-- FŐOLDAL -->
         <section id="main">
@@ -259,7 +259,7 @@
 
                                 <div id="accordion">	
 
-                                        <div class="row py-2 collapsed card-link" data-toggle="collapse" href="#collapseOne">
+                                    <div class="row py-2 collapsed card-link" data-toggle="collapse" href="#collapseOne">
                                                 <img src="img/akac-mez.jpg" class="img img-fluid">
                                                 <div class="col-9 col-md-9 ml-auto text-justify"><p id="akac" style="color: white;">
                                                         Akác méz</p><p>Az akácméz íze lágy és kellemes, 
@@ -271,30 +271,11 @@
                                         <div class="card-body">
                                                 <p class="text-center">Akácméz árak</p>
                                                 <table class="table table-borderless table-striped">
-                                                        <thead>
-<!--                                                                <tr class="text-center">
-                                                                        <th>Kiszerelés</th>
-                                                                        <th>Árak</th>
-                                                                </tr>-->
-                                                        </thead>
+                                                        
                                                         <tbody>
-                                                            <div id="adatok" class="text-center"></div>
-<!--                                                                <tr class="text-center">
-                                                                        <td>1000g</td>
-                                                                        <td>2000 huf</td>
-                                                                </tr>
-                                                                <tr class="text-center">
-                                                                        <td>900g</td>
-                                                                        <td>1800 huf</td>
-                                                                </tr>
-                                                                <tr class="text-center">
-                                                                        <td>500g</td>
-                                                                        <td>1150 huf</td>
-                                                                </tr>
-                                                                <tr class="text-center">
-                                                                        <td>250g</td>
-                                                                        <td>600 huf</td>
-                                                                </tr>-->
+                                                            
+                                                            <div id="akacmez" class="text-center"></div>
+
                                                         </tbody>
                                                 </table>
                                         </div>
@@ -310,29 +291,11 @@
                                         <div class="card-body">
                                                 <p class="text-center">Hársméz árak</p>
                                                 <table class="table table-borderless table-striped">
-                                                        <thead>
-                                                                <tr class="text-center">
-                                                                        <th>Kiszerelés</th>
-                                                                        <th>Árak</th>
-                                                                </tr>
-                                                        </thead>
+                                                        
                                                         <tbody>
-                                                                <tr class="text-center">
-                                                                        <td>1000g</td>
-                                                                        <td>1800 huf</td>
-                                                                </tr>
-                                                                <tr class="text-center">
-                                                                        <td>900g</td>
-                                                                        <td>1620 huf</td>
-                                                                </tr>
-                                                                <tr class="text-center">
-                                                                        <td>500g</td>
-                                                                        <td>1050 huf</td>
-                                                                </tr>
-                                                                <tr class="text-center">
-                                                                        <td>250g</td>
-                                                                        <td>550 huf</td>
-                                                                </tr>
+                                                            
+                                                            <div id="harsmez" class="text-center"></div>
+
                                                         </tbody>
                                                 </table>
                                         </div>
@@ -350,29 +313,11 @@
                                         <div class="card-body">
                                                 <p class="text-center">Nyári virágméz árak</p>
                                                 <table class="table table-borderless table-striped">
-                                                        <thead>
-                                                                <tr class="text-center">
-                                                                        <th>Kiszerelés</th>
-                                                                        <th>Árak</th>
-                                                                </tr>
-                                                        </thead>
+                                                        
                                                         <tbody>
-                                                                <tr class="text-center">
-                                                                        <td>1000g</td>
-                                                                        <td>1600 huf</td>
-                                                                </tr>
-                                                                <tr class="text-center">
-                                                                        <td>900g</td>
-                                                                        <td>1450 huf</td>
-                                                                </tr>
-                                                                <tr class="text-center">
-                                                                        <td>500g</td>
-                                                                        <td>900 huf</td>
-                                                                </tr>
-                                                                <tr class="text-center">
-                                                                        <td>250g</td>
-                                                                        <td>500 huf</td>
-                                                                </tr>
+                                                            
+                                                            <div id="nyarivirag" class="text-center"></div>
+
                                                         </tbody>
                                                 </table>
                                         </div>
@@ -390,29 +335,11 @@
                                         <div class="card-body">
                                                 <p class="text-center">Tavaszi virágméz árak</p>
                                                 <table class="table table-borderless table-striped">
-                                                        <thead>
-                                                                <tr class="text-center">
-                                                                        <th>Kiszerelés</th>
-                                                                        <th>Árak</th>
-                                                                </tr>
-                                                        </thead>
+                                                        
                                                         <tbody>
-                                                                <tr class="text-center">
-                                                                        <td>1000g</td>
-                                                                        <td>1600 huf</td>
-                                                                </tr>
-                                                                <tr class="text-center">
-                                                                        <td>900g</td>
-                                                                        <td>1450 huf</td>
-                                                                </tr>
-                                                                <tr class="text-center">
-                                                                        <td>500g</td>
-                                                                        <td>900 huf</td>
-                                                                </tr>
-                                                                <tr class="text-center">
-                                                                        <td>250g</td>
-                                                                        <td>500 huf</td>
-                                                                </tr>
+                                                                
+                                                            <div id="tavaszivirag" class="text-center"></div>
+                                                            
                                                         </tbody>
                                                 </table>
                                         </div>
@@ -429,29 +356,9 @@
                                         <div class="card-body">
                                                 <p class="text-center">Repce méz árak</p>
                                                 <table class="table table-borderless table-striped">
-                                                        <thead>
-                                                                <tr class="text-center">
-                                                                        <th>Kiszerelés</th>
-                                                                        <th>Árak</th>
-                                                                </tr>
-                                                        </thead>
+                                                        
                                                         <tbody>
-                                                                <tr class="text-center">
-                                                                        <td>1000g</td>
-                                                                        <td>1600 huf</td>
-                                                                </tr>
-                                                                <tr class="text-center">
-                                                                        <td>900g</td>
-                                                                        <td>1450 huf</td>
-                                                                </tr>
-                                                                <tr class="text-center">
-                                                                        <td>500g</td>
-                                                                        <td>900 huf</td>
-                                                                </tr>
-                                                                <tr class="text-center">
-                                                                        <td>250g</td>
-                                                                        <td>500 huf</td>
-                                                                </tr>
+                                                               <div id="repcemez" class="text-center"></div> 
                                                         </tbody>
                                                 </table>
                                         </div>
@@ -468,29 +375,9 @@
                                         <div class="card-body">
                                                 <p class="text-center">Napraforgóméz árak</p>
                                                 <table class="table table-borderless table-striped">
-                                                        <thead>
-                                                                <tr class="text-center">
-                                                                        <th>Kiszerelés</th>
-                                                                        <th>Árak</th>
-                                                                </tr>
-                                                        </thead>
+                                                        
                                                         <tbody>
-                                                                <tr class="text-center">
-                                                                        <td>1000g</td>
-                                                                        <td>1600 huf</td>
-                                                                </tr>
-                                                                <tr class="text-center">
-                                                                        <td>900g</td>
-                                                                        <td>1450 huf</td>
-                                                                </tr>
-                                                                <tr class="text-center">
-                                                                        <td>500g</td>
-                                                                        <td>900 huf</td>
-                                                                </tr>
-                                                                <tr class="text-center">
-                                                                        <td>250g</td>
-                                                                        <td>500 huf</td>
-                                                                </tr>
+                                                             <div id="nap" class="text-center"></div>   
                                                         </tbody>
                                                 </table>
                                         </div>
@@ -506,61 +393,11 @@
                                         <div class="card-body">
                                                 <p class="text-center">Díszcsomagolt termék árak</p>
                                                 <table class="table table-borderless table-striped">
-                                                        <thead>
-                                                                <tr>
-                                                                        <th>Kiszerelés</th>
-                                                                        <th>Árak</th>
-                                                                </tr>
-                                                        </thead>
+                                                       
                                                         <tbody>
-                                                                <tr>
-                                                                        <td>4x230g Méz</td>
-                                                                        <td>2450 huf</td>
-                                                                </tr>
-                                                                <tr>
-                                                                        <td>2x500g méz (Akác-Hárs)</td>
-                                                                        <td>2600 huf</td>
-                                                                </tr>
-                                                                <tr>
-                                                                        <td>2x500g méz (Akác-bármely virág)</td>
-                                                                        <td>2450 huf</td>
-                                                                </tr>
-                                                                <tr>
-                                                                        <td>2x500g méz (Hárs-bármely virág)</td>
-                                                                        <td>2350 huf</td>
-                                                                </tr>
-                                                                <tr>
-                                                                        <td>2x500g méz (2 féle virágmézből)</td>
-                                                                        <td>2100 huf</td>
-                                                                </tr>
-                                                                <tr>
-                                                                        <td>Házikó</td>
-                                                                        <td>1500 huf</td>
-                                                                </tr>
-                                                                <tr>
-                                                                        <td>Kis polc</td>
-                                                                        <td>1850 huf</td>
-                                                                </tr>
-                                                                <tr>
-                                                                        <td>Nagy polc</td>
-                                                                        <td>2500 huf</td>
-                                                                </tr>
-                                                                <tr>
-                                                                        <td>Szív alakú mézesüveg</td>
-                                                                        <td>850 huf</td>
-                                                                </tr>
-                                                                <tr>
-                                                                        <td>2x500g méz fa dobozban</td>
-                                                                        <td>3000 huf</td>
-                                                                </tr>
-                                                                <tr>
-                                                                        <td>Díszdoboz 1kg-os mézhez</td>
-                                                                        <td>350 huf</td>
-                                                                </tr>
-                                                                <tr>
-                                                                        <td>Dísz tasak</td>
-                                                                        <td>350 huf</td>
-                                                                </tr>
+                                                            
+                                                            <div id="disz" class="text-center"></div>
+                                                              
                                                         </tbody>
                                                 </table>
                                         </div>

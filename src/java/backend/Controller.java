@@ -39,17 +39,106 @@ public class Controller extends HttpServlet {
             EntityManagerFactory emf = Persistence.createEntityManagerFactory("Banhegyi_meheszetPU");
             EntityManager em = emf.createEntityManager();
             
-            List<Akac> akacok = Akac.getAllAkac(em);
-            JSONArray akacokA = new JSONArray();
-            for(Akac a : akacok){
-                JSONObject j = new JSONObject();               
-                j.put("id", a.getId());
-                j.put("nev", a.getNev());
-                j.put("mennyiseg", a.getMennyiseg());
-                j.put("ara", a.getAra());
-                akacokA.put(j);
+            if(request.getParameter("task").equals("betoltA")){
+                List<Akac> akacok = Akac.getAllAkac(em);
+                JSONArray akacokA = new JSONArray();
+                for(Akac a : akacok){
+                    JSONObject j = new JSONObject();               
+                    j.put("id", a.getId());
+                    j.put("nev", a.getNev());
+                    j.put("mennyiseg", a.getMennyiseg());
+                    j.put("ara", a.getAra());
+                    akacokA.put(j);
+                }
+                out.print(akacokA.toString()); 
             }
-            out.print(akacokA.toString()); 
+            
+            if(request.getParameter("task").equals("betoltH")){
+                List<Hars> harsok = Hars.getAllHars(em);
+                JSONArray harsokH = new JSONArray();
+                for(Hars h : harsok){
+                    JSONObject j = new JSONObject();               
+                    j.put("id", h.getId());
+                    j.put("nev", h.getNev());
+                    j.put("mennyiseg", h.getMennyiseg());
+                    j.put("ara", h.getAra());
+                    harsokH.put(j);
+                }
+                out.print(harsokH.toString()); 
+            }
+            
+            if(request.getParameter("task").equals("betoltN")){
+                List<Nyarivirag> nyarik = Nyarivirag.getAllNyarivirag(em);
+                JSONArray nyarikN = new JSONArray();
+                for(Nyarivirag n : nyarik){
+                    JSONObject j = new JSONObject();               
+                    j.put("id", n.getId());
+                    j.put("nev", n.getNev());
+                    j.put("mennyiseg", n.getMennyiseg());
+                    j.put("ara", n.getAra());
+                    nyarikN.put(j);
+                }
+                out.print(nyarikN.toString()); 
+            }
+            
+            if(request.getParameter("task").equals("betoltT")){
+                List<Tavaszivirag> tavaszik = Tavaszivirag.getAllTavaszivirag(em);
+                JSONArray tavaszikT = new JSONArray();
+                for(Tavaszivirag t : tavaszik){
+                    JSONObject j = new JSONObject();               
+                    j.put("id", t.getId());
+                    j.put("nev", t.getNev());
+                    j.put("mennyiseg", t.getMennyiseg());
+                    j.put("ara", t.getAra());
+                    tavaszikT.put(j);
+                }
+                out.print(tavaszikT.toString()); 
+            }
+            
+            if(request.getParameter("task").equals("betoltR")){
+                List<Repce> repcek = Repce.getAllRepce(em);
+                JSONArray repcekR = new JSONArray();
+                for(Repce r : repcek){
+                    JSONObject j = new JSONObject();               
+                    j.put("id", r.getId());
+                    j.put("nev", r.getNev());
+                    j.put("mennyiseg", r.getMennyiseg());
+                    j.put("ara", r.getAra());
+                    repcekR.put(j);
+                }
+                out.print(repcekR.toString()); 
+            }
+            
+            if(request.getParameter("task").equals("betoltF")){
+                List<Napraforgo> napra = Napraforgo.getAllNapraforgo(em);
+                JSONArray napraNF = new JSONArray();
+                for(Napraforgo n : napra){
+                    JSONObject j = new JSONObject();               
+                    j.put("id", n.getId());
+                    j.put("nev", n.getNev());
+                    j.put("mennyiseg", n.getMennyiseg());
+                    j.put("ara", n.getAra());
+                    napraNF.put(j);
+                }
+                out.print(napraNF.toString()); 
+            }
+            
+            if(request.getParameter("task").equals("betoltD")){
+                List<Diszcsomag> diszek = Diszcsomag.getAllDiszcsomag(em);
+                JSONArray diszekD = new JSONArray();
+                for(Diszcsomag d : diszek){
+                    JSONObject j = new JSONObject();               
+                    j.put("id", d.getId());
+                    j.put("nev", d.getNev());
+                    j.put("mennyiseg", d.getMennyiseg());
+                    j.put("ara", d.getAra());
+                    diszekD.put(j);
+                }
+                out.print(diszekD.toString()); 
+            }
+            
+            
+            
         }
         catch(Exception ex){
             System.out.println("Hiba: " + ex.toString());
