@@ -66,11 +66,16 @@
         </script>
         
         <script src="main.js"></script>
-      
+        <script src="login.js"></script>
+        <style>
+            #section4 span{
+                font-size: 8px;
+            }
+        </style>
                 
     </head>
     
-    <body onload="betoltA(), betoltH(), betoltN(), betoltT(), betoltR(), betoltF(), betoltD()">
+    <body onload="betoltA(), betoltH(), betoltN(), betoltT(), betoltR(), betoltF(), betoltD(), betoltV()">
         
         <!-- FŐOLDAL -->
         <section id="main">
@@ -158,51 +163,30 @@
 
                         <img id="kep1" src="img/banhegyi.jpeg" class="mx-auto d-flex img-fluid">
 
-                        <div id="accordion1">
 
-                                <div class="collapsed card-link" data-toggle="collapse" href="#collapseTen">
+                                <div>
 
                                         <p class="bemutatkozas">Bánhegyi Roland méhész vagyok, 1978-ban egy meleg nyári napon, 
                                             Mohácson láttam meg a napvilágot. Mecseknádasdon élek családommal, akik mindenben 
-                                            segítségemre vannak a méhészetben. <p class="text-center cim1">Több infó...</p></p>
-
-                                </div>
-
-                                <div id="collapseTen" class="collapse" data-parent="#accordion1">
-
-                                                <p class="bemutatkozas"> Munka mellett méhészkedem, jelenleg 60 méhcsaláddal 
-                                                    lakóhelyemen. Már dédnagyapám is méhészkedett abban a méhes házban, ami 
-                                                    egykoron a szüleim háza mellett ált. Első méhcsaládjaimat nagybátyámtól 
-                                                    kaptam, aki a mai napig segítségemre van.<br>Elméleti és gyakorlati tudásom 
-                                                    gyarapítása végett 2013-ban elvégeztem a méhész szakmunkásképző iskolát, 
-                                                    ami nem csak tudást, hanem olyan méhészek ismerettségét is magával hozta, 
-                                                    akik azóta is segítenek, hogy jó és eredményes méhészé válljak.<br>Jelenlegi 
-                                                    termékeink tavaszi virág, repce, akác, hárs, nyári virág és napraforgó méz 
-                                                    valamint propolisz, amelyek a helyi CBA élelmiszerboltban, a Hetényi 
-                                                    pincészetben és a Karl-Mikro Sörfőzdében elérhetőek, különböző kiszerelésekben 
-                                                    és csomagolásokban.<br>Kínálatunkat az igényeknek megfelelően igyekszünk 
-                                                    bővíteni.<br>2013-ban csatlakoztunk a Mecseki Mézes Körúthoz, hogy több 
-                                                    baranyai méhésszel összefogva népszerűsítsük a kiváló minőségű Mecseki Mézet.
-                                                    <br>Termékeinknél nem a mennyiségre, hanem a minőségre törekszünk, amellyel 
-                                                    igyekszünk elnyerni vásárlóink bizalmát.</p><br>
+                                            segítségemre vannak a méhészetben. Munka mellett méhészkedem, jelenleg 60 méhcsaláddal 
+                                            lakóhelyemen. Már dédnagyapám is méhészkedett abban a méhes házban, ami 
+                                            egykoron a szüleim háza mellett ált. Első méhcsaládjaimat nagybátyámtól 
+                                            kaptam, aki a mai napig segítségemre van.<br>Elméleti és gyakorlati tudásom 
+                                            gyarapítása végett 2013-ban elvégeztem a méhész szakmunkásképző iskolát, 
+                                            ami nem csak tudást, hanem olyan méhészek ismerettségét is magával hozta, 
+                                            akik azóta is segítenek, hogy jó és eredményes méhészé válljak.<br>Jelenlegi 
+                                            termékeink tavaszi virág, repce, akác, hárs, nyári virág és napraforgó méz 
+                                            valamint propolisz, amelyek a helyi CBA élelmiszerboltban, a Hetényi 
+                                            pincészetben és a Karl-Mikro Sörfőzdében elérhetőek, különböző kiszerelésekben 
+                                            és csomagolásokban.<br>Kínálatunkat az igényeknek megfelelően igyekszünk 
+                                            bővíteni. 2013-ban csatlakoztunk a Mecseki Mézes Körúthoz, hogy több 
+                                            baranyai méhésszel összefogva népszerűsítsük a kiváló minőségű Mecseki Mézet.
+                                            Termékeinknél nem a mennyiségre, hanem a minőségre törekszünk, amellyel 
+                                            igyekszünk elnyerni vásárlóink bizalmát.</p>
 
                                 </div>
 
                         </div>
-
-<!--                                <div class="dropdown text-center" style="margin: 25px 0;">
-                                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" style="width: 200px;">
-                                    Képgaléria
-                                        </button>
-                                        <div class="dropdown-menu" style="background: #fd9d2d; width: 200px;">
-                                        <a class="dropdown-item" href="kepgaleria.html" target="_blank">Képgaléria-1</a>
-                                        <a class="dropdown-item" href="kepgaleria2.html" target="_blank">Képgaléria-2</a>
-                                        </div>
-                                </div>						  -->
-
-                        <p class="text-center bemutatkozas mt-2">Nézzen körül oldalunkon!</p>	
-
-                </div>
 
                 </div>
 
@@ -446,32 +430,37 @@
                                         <div class="carousel-inner">
                                                 <div class="carousel-item active">
                                                         <div class="card mx-auto">
-                                                                <p><span>&#750;</span> A méz nagyon finom! A kiszolgálás gyors és pontos. Ajánlani tudom mindenkinek!</p>
-                                                                <p class="author">- Takács Attila</p>
+                                                            <div id="velemeny1" class="velemeny"></div>
+<!--                                                                <p><span>&#750;</span> A méz nagyon finom! A kiszolgálás gyors és pontos. Ajánlani tudom mindenkinek!</p>
+                                                                <p class="author">- Takács Attila</p>-->
                                                         </div>
                                                 </div>
                                                 <div class="carousel-item">
                                                         <div class="card mx-auto">
-                                                                <p><span>&#750;</span> Mint mindig, most is minden rendben volt a rendeléssel és a kiszállítással is.</p>
-                                                                <p class="author">- Kiss Orsi</p>
+                                                            <div id="velemeny2" class="velemeny"></div>
+<!--                                                                <p><span>&#750;</span> Mint mindig, most is minden rendben volt a rendeléssel és a kiszállítással is.</p>
+                                                                <p class="author">- Kiss Orsi</p>-->
                                                         </div>
                                                 </div>
                                                 <div class="carousel-item">
                                                         <div class="card mx-auto">
-                                                                <p><span>&#750;</span> Nagyon jó ízűek a mézek. A legfinomabb a napraforgó íze, a kávémat ezzel édesítem.</p>
-                                                                <p class="author">- Nagy Tamás</p>
+                                                            <div id="velemeny3" class="velemeny"></div>
+<!--                                                                <p><span>&#750;</span> Nagyon jó ízűek a mézek. A legfinomabb a napraforgó íze, a kávémat ezzel édesítem.</p>
+                                                                <p class="author">- Nagy Tamás</p>-->
                                                         </div>
                                                 </div>
                                                 <div class="carousel-item">
                                                         <div class="card mx-auto">
-                                                                <p><span>&#750;</span> Nagyon szeretjük a mézüket, különlegesen finom és kitűnő minőségű magyar termék.</p>
-                                                                <p class="author">- Szabó Győző</p>
+                                                            <div id="velemeny4" class="velemeny"></div>
+<!--                                                                <p><span>&#750;</span> Nagyon szeretjük a mézüket, különlegesen finom és kitűnő minőségű magyar termék.</p>
+                                                                <p class="author">- Szabó Győző</p>-->
                                                         </div>
                                                 </div>
                                                 <div class="carousel-item">
                                                         <div class="card mx-auto">
-                                                                <p><span>&#750;</span> További sikeres munkát kívánunk Önöknek és szorgos méheiknek!</p>
-                                                                <p class="author">- Ábrahám Péter</p>
+                                                            <div id="velemeny5" class="velemeny"></div>
+<!--                                                                <p><span>&#750;</span> További sikeres munkát kívánunk Önöknek és szorgos méheiknek!</p>
+                                                                <p class="author">- Ábrahám Péter</p>-->
                                                         </div>
                                                 </div>
                                         </div>
@@ -546,6 +535,20 @@
                         <div class="col-12 col-md-2"></div>
 
                 </div>
+
+                <div class="container">
+                    <form>
+
+                        <div class="form-group">
+                            <input type="text" id="txtFelhasznalonev" placeholder="Felhasználónév" class="form-control mx-auto d-flex" style="width: 10rem; background-color: rgba(0,0,0,0); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border: none"><br>
+                            <input type="password" id="txtJelszo" placeholder="Jelszó" class="form-control mx-auto d-flex" style="width: 10rem; background-color: rgba(0,0,0,0); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border: none"><br>
+
+                        </div>
+                            <button onclick="login()" class="btn mb-2 mx-auto d-flex">Küldés</button>
+
+                    </form>
+                </div>
+                
                 </section>
 
 		<!-- SECTION 5 VÉGE -->

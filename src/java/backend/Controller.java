@@ -137,6 +137,37 @@ public class Controller extends HttpServlet {
                 out.print(diszekD.toString()); 
             }
             
+            if(request.getParameter("task").equals("betoltV")){
+                List<Velemenyek> velemenyek = Velemenyek.getAllVelemenyek(em);
+                JSONArray velemenyekV = new JSONArray();
+                for(Velemenyek v : velemenyek){
+                    JSONObject j = new JSONObject();               
+                    j.put("id", v.getId());
+                    j.put("leiras", v.getLeiras());
+                    j.put("szerzo", v.getSzerzo());
+                    velemenyekV.put(j);
+                }
+                out.print(velemenyekV.toString()); 
+            }
+            
+            if(request.getParameter("task").equals("login")){
+                String user = request.getParameter("username");
+                String passwd = request.getParameter("password");
+                Felhasznalo f = Felhasznalo.login(em, user, passwd);
+                if(f != null){
+                    request.getSession().setAttribute("user", f);
+                    //request.getSession().getAttribute("user");
+                    JSONObject j = new JSONObject();
+                    j.put("result", "Üdvözlünk kedves " + f.getFelhasznalonev());
+                    out.print(j.toString());
+                }//end of valid user
+                else{
+                    JSONObject j = new JSONObject();
+                    j.put("result", "Hibás felhasználónév, vagy jelszó");
+                    out.print(j.toString());
+                }//end of non-valid user
+            }//end of login
+            
             
             
         }

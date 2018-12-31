@@ -195,10 +195,7 @@ body, html {
 	background: rgba(0,0,0,0);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.bemutatkozas:hover,
-.cim1:hover {
-	cursor: pointer;
-}
+
 
 /* SECTION 2 */
 #section2 {
@@ -253,6 +250,9 @@ body, html {
 	margin-bottom: 80px;
 	background: #83828D;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#section4 .velemeny {
+    font-size: 0.3rem;
 }
 #section4 .card p {
 	font-style: italic;
